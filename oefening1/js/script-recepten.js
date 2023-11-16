@@ -15,7 +15,7 @@ fetch('')
         let html = '<div class="accordion accordion-flush" id="accordionExample">';
         // plaats van de recepten met naam, ingerdiënten, afbeelding,... in HTML
         // op regel 25 plaats je tussen de accolades de titel van het recept in
-        // op regel 31 laadt je de juiste "keys" van het recept in. Haal deze groene tekst, inclusief backticks weg om het geheel te doen werken.
+        // op regel 31 laadt je de juiste "keys" van het recept in.
         for (let i = 0; i < json.length-2; i++) {
             const recipe = json[i];
             html += `<div class="accordion-item">
