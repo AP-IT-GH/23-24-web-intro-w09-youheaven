@@ -5,47 +5,33 @@ Test of je de correcte endpoint hebt in Postman. Pas nadien "fetch" je de correc
 */
 
 fetch('')
-    .then(function (response) {
-        // nakijken of de API-call een antwoord terugstuurt
-        if (response.ok) {
-            // als de status "ok" (=200) is, dan wordt het antwoord omgezet in JSON
-            return response.json();
-        } else {
-            // als de status niet "ok" is, geef dan de status terug en annuleer het uitvoeren
-            return Promise.reject(response.status);
-        }
-    })
-
-    .then(function (response) {
-        // lees het volledige antwoord uit in de console
-        console.log(response);
+    // maak van het antwoord een JSON antwoord
+    .then(response => response.json())
+    // lees de json uit en zet om naar HTML
+    .then(json => {
+        // lees het volledige antwoord uit in de console (verwijder deze regel code wanneer je klaar bent)
+        console.log(json);
         // plaats een section met grid
         let html = '<div class="accordion accordion-flush" id="accordionExample">';
         // plaats van de recepten met naam, ingerdiënten, afbeelding,... in HTML
-        console.log(response.length);
-        for (let i = 0; i < response.length-2; i++) {
-            const recipe = response[i];
+        // op regel 25 plaats je tussen de accolades de titel van het recept in
+        // op regel 31 laadt je de juiste "keys" van het recept in. Haal deze groene tekst, inclusief backticks weg om het geheel te doen werken.
+        for (let i = 0; i < json.length-2; i++) {
+            const recipe = json[i];
             html += `<div class="accordion-item">
 
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed text-uppercase fs-6 fw-bolder pt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${i}" aria-expanded="false" aria-controls="collapse${i}">
-                `/* Laadt hieronder de titel van het recept in. Haal deze groene tekst, inclusief backticks weg om het geheel te doen werken. */`
                 ${}
                 </button>
               </h2>
 
               <div id="collapse${i}" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-              `/* Laadt hieronder de juiste "keys" van het recept in. Haal deze groene tekst, inclusief backticks weg om het geheel te doen werken.*/`
               <img src="      " class="float-start" alt="        "><span class="h6 mt-2">ingrediënten</span>:            <hr><span class="h6  mt-2">bereiding</span>:         </div>
             </div>
       </div>`;
         }
         html += '</div>';
         document.getElementById("recepten").innerHTML = html;
-    })
-
-    .catch(function (error) {
-        // indien er een fout is, toon in de console dan wat er misloopt
-        console.error("Error with message: " + error)
     });
