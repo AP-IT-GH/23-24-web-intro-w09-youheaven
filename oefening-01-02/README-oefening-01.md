@@ -2,7 +2,7 @@
 
 ## 🛠️ opdrachten
 
-### JS-libraries en API's linken
+### JS-library en API linken
 
 Voeg (in het `<head>`-element) van `contact.html` de volgende bibliotheek en API-link toe:
 
