@@ -18,7 +18,7 @@ In het `<main>`-element op `recepten.html` is een `<section>`-element met `id="r
  - [ ] Gebruik telkens de instructies in het startbestand.
  - [ ] Haal 2 welbepaalde stukken commentaar uit `script-recepten.js`  
    (zie instructies in js-document voor meer info)  
-   **tip:** Gebruik ThunderClient of Postman en de coffee-API.
+   **tip:** Gebruik Postman en de coffee-API.
  - [ ] Maak voor de afbeelding van de recepten een klasse "img-small" aan.
  - [ ] Zorg dat deze een padding heeft van boven 0px, rechts 20px, onder 20px en links 0px.
  - [ ] De afbeelding is 100 px hoog en 100 px breed.
