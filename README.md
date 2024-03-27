@@ -8,12 +8,12 @@ Tijdens de lessen van deze week leer je:
  - hoe je API's en libraries gebruikt,
  - hoe de Leaflet-library werkt.
 
-## 🔍 week 09: JS-libraries
+## 🔍 JS-bibliotheken en API's toepassen
 
 In dit labo leren we JS-bibliotheken en API's toepassen in de praktijk. 
 
 **tip: Voor je aan de oefeningen begint** lees je eerst het hoofdstuk over 
-- [bibliotheken](https://apwt.gitbook.io/g_webtechnologie/js/js-bibliotheken) en 
-- [API-naar-FrontEnd](https://apwt.gitbook.io/g_webtechnologie/apis-essentials/api-blackbox)
+- [bibliotheken](https://apwt.gitbook.io/webtechnologie/javascript/wat-is-js/bibliotheken) en 
+- [API-naar-FrontEnd](https://apwt.gitbook.io/webtechnologie/asynchroon-programmeren/wat-is-een-api/api-aanroepen)
 
 In elke oefening werd het merendeel van HTML, Bootstrap en een deel van de JavaScript-code al voorzien. 
